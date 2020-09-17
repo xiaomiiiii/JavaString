@@ -13,5 +13,8 @@ public class Main {
         String s3 = "It is a String. I need to count the number of words in this sentence.";
         Words.countWords(s3);
 
+        // Q4. Count consonants and do replacement
+        String s4 = "It is a String. I need to count all the consonants in this sentence.";
+        Consonants.countConsonants(s4);
     }
 }
