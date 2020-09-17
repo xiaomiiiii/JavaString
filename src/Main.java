@@ -12,5 +12,6 @@ public class Main {
         // Q3. Count words
         String s3 = "It is a String. I need to count the number of words in this sentence.";
         Words.countWords(s3);
+
     }
 }
