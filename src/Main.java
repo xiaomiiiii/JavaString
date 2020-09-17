@@ -16,5 +16,9 @@ public class Main {
         // Q4. Count consonants and do replacement
         String s4 = "It is a String. I need to count all the consonants in this sentence.";
         Consonants.countConsonants(s4);
+
+        // Q5. LastLetterCount
+        String s5 = "It is a String. I need to count all words that end in s and y and to switch the first instance of word that ends in s and y";
+        LastLetterCount.countAndSwitch(s5);
     }
 }
