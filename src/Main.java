@@ -8,5 +8,9 @@ public class Main {
         // Q2. Check Palindrome
         String s2 = "Was it a car or a cat I saw?";
         Palindrome.isPalindrome(s2);
+
+        // Q3. Count words
+        String s3 = "It is a String. I need to count the number of words in this sentence.";
+        Words.countWords(s3);
     }
 }
