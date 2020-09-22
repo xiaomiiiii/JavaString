@@ -1,4 +1,4 @@
-package main.java;
+package com.javastring.maven;
 
 public class LastLetterCount {
     String s = "It is a String. I need to count all words that end in s and y and to switch the first instance of word that ends in s and y";
@@ -7,16 +7,16 @@ public class LastLetterCount {
     static int indexS = -1;
     static int indexY = -1;
 
-    public static void countAndSwitch(String str) {
+    public static int[] countAndSwitch(String str) {
         String[] arr = str.split(" ");
 
         for (int i = 0; i < arr.length; i++) {
             char lastLetter = arr[i].charAt(arr[i].length() - 1);
-            if (Character.isAlphabetic(lastLetter)) {
+            if (Character.isLetter(lastLetter)) {
                 checkLastLetter(lastLetter, i);
             } else {
                 for (int j = arr[i].length() - 1; j >= 0; j--) {
-                    if (Character.isAlphabetic(arr[i].charAt(j))) {
+                    if (Character.isLetter(arr[i].charAt(j))) {
                         checkLastLetter(arr[i].charAt(j), i);
                     }
                 }
@@ -44,6 +44,10 @@ public class LastLetterCount {
         }
 
         System.out.println("The new String is: " + str);
+
+        int[] result = {cntS, cntY};
+
+        return result;
     }
 
     private static void checkLastLetter(Character c, int i) {

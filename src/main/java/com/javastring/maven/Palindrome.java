@@ -1,9 +1,9 @@
-package main.java;
+package com.javastring.maven;
 
 public class Palindrome {
     String s = "Was is a car or a cat I saw?";
 
-    public static void isPalindrome(String s) {
+    public static boolean isPalindrome(String s) {
         s = s.toLowerCase().replaceAll("[^0-9|a-z]", "");
 
         StringBuilder sb = new StringBuilder("");
@@ -14,8 +14,10 @@ public class Palindrome {
 
         if (s.equals(newS)) {
             System.out.println("This String is a palindrome.");
+            return true;
         } else {
             System.out.println("This String is NOT a palindrome.");
+            return false;
         }
     }
 }

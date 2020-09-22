@@ -1,4 +1,4 @@
-package main.java;
+package com.javastring.maven;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -6,7 +6,7 @@ import java.util.Set;
 public class Consonants {
     public String s = "It is a String. I need to count all the consonants in this sentence.";
 
-    public static void countConsonants(String s) {
+    public static int countConsonants(String s) {
         Set<Character> vowels = new HashSet<Character>();
         vowels.add('a');
         vowels.add('e');
@@ -30,5 +30,7 @@ public class Consonants {
         System.out.println("The String after replacement: " + s);
         System.out.println("There are " + cnt + " consonants in this sentence.");
         System.out.println("The new String is: " + newS);
+
+        return cnt;
     }
 }

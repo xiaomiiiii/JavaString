@@ -1,4 +1,4 @@
-package main.java;
+package com.javastring.maven;
 
 public class Main {
 

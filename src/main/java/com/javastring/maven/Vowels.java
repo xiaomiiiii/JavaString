@@ -1,4 +1,4 @@
-package main.java;
+package com.javastring.maven;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -6,7 +6,7 @@ import java.util.Set;
 public class Vowels {
     public String s = "It is a String. I need to count all the vowels in this sentence.";
 
-    public static void countVowels(String s) {
+    public static int countVowels(String s) {
         Set<Character> vowels = new HashSet<Character>();
         vowels.add('a');
         vowels.add('e');
@@ -24,5 +24,6 @@ public class Vowels {
         }
 
         System.out.println("There are " + cnt + " vowels in this sentence.");
+        return cnt;
     }
 }
