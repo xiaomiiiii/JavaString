@@ -1,3 +1,5 @@
+package main.java;
+
 public class LastLetterCount {
     String s = "It is a String. I need to count all words that end in s and y and to switch the first instance of word that ends in s and y";
     static int cntS = 0;

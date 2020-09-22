@@ -1,3 +1,5 @@
+package main.java;
+
 public class Palindrome {
     String s = "Was is a car or a cat I saw?";
 
