@@ -9,7 +9,7 @@ public class PalindromeTest {
 
     @Test
     public void isPalindrome() {
-        String s = "Was is a car or a cat I saw?";
+        String s = "Was it a car or a cat I saw?";
         boolean result = Palindrome.isPalindrome(s);
         Assert.assertEquals(true, result);
     }

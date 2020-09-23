@@ -11,7 +11,7 @@ public class VowelsTest {
     public void countVowels() {
         String s = "It is a String. I need to count all the vowels in this sentence.";
         int result = Vowels.countVowels(s);
-        Assert.assertEquals(18, result);
+        Assert.assertEquals(19, result);
 
     }
 }
